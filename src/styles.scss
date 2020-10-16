@@ -1,11 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  background-image: url("assets/images/bground.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* Set a specific height */
   height: 500px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #cccccc;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #6f2232;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #31708e;
+  transform: scale(1.25);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  height: 100vh;
+  -webkit-transition-property: color, background;
+  -webkit-transition-duration: 0.5s, 0.5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }

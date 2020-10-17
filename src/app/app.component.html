@@ -8,8 +8,7 @@
     (click)="openNav()"
     >&#9776;</span
   >
-  <div style="padding-top: 2.5%"></div>
-  <div [@routeAnimations]="prepareRoute(outlet)">
+  <div style="padding-top: 3.5%" [@routeAnimations]="prepareRoute(outlet)">
     <router-outlet #outlet="outlet"></router-outlet>
   </div>
   <i

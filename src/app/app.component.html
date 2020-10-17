@@ -9,7 +9,9 @@
     >&#9776;</span
   >
   <div style="padding-top: 2.5%"></div>
-  <router-outlet></router-outlet>
+  <div [@routeAnimations]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
   <i
     (click)="navigateToNext()"
     class="pi pi-chevron-down"

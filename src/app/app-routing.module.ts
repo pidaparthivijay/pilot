@@ -15,27 +15,33 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
+    data: { animation: 'First' }
   },
   {
     path: 'contact',
-    component: ContactComponent
+    component: ContactComponent,
+    data: { animation: 'Second' }
   },
   {
     path: 'education',
-    component: EducationComponent
+    component: EducationComponent,
+    data: { animation: 'Third' }
   },
   {
     path: 'projects',
-    component: ProjectsComponent
+    component: ProjectsComponent,
+    data: { animation: 'Fourth' }
   },
   {
     path: 'resume',
-    component: ResumeComponent
+    component: ResumeComponent,
+    data: { animation: 'Fifth' }
   },
   {
     path: 'skills',
-    component: SkillsComponent
+    component: SkillsComponent,
+    data: { animation: 'Sixth' }
   }
 ];
 

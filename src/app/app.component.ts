@@ -8,14 +8,19 @@ import { Constants } from './shared/constants';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+
   title = 'pilot';
+  nextComponent: string;
+
   constructor(private router: Router) {
     router.events.subscribe((val) => {
       if (val instanceof NavigationEnd) {
         document.getElementById('main').style.background = Constants.COLOR_MAP.get(val.url);
+        this.nextComponent = Constants.NEXT_MAP.get(val.url);
       }
     });
   }
+
   openNav() {
     document.getElementById('mySidenav').style.width = '250px';
     document.getElementById('main').style.marginLeft = '250px';
@@ -24,5 +29,9 @@ export class AppComponent {
   closeNav() {
     document.getElementById('mySidenav').style.width = '0';
     document.getElementById('main').style.marginLeft = '0';
+  }
+
+  navigateToNext() {
+    this.router.navigateByUrl(this.nextComponent);
   }
 }

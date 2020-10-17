@@ -1,9 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   height: 100vh;
-  background-image: url("assets/images/vijay.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
+  font-family: "AdventProBold" !important;
 }
 
 .sidenav {
@@ -13,7 +11,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #cccccc;
+  background-color: inherit;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -23,13 +21,13 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #6f2232;
+  font-family: "Raleway", sans-serif;
+  color: #111111;
   display: block;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .sidenav a:hover {
-  color: #31708e;
   transform: scale(1.25);
 }
 
@@ -37,7 +35,7 @@ body {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 30px;
   margin-left: 50px;
 }
 
@@ -45,15 +43,31 @@ body {
   transition: margin-left 0.5s;
   padding: 16px;
   height: 100vh;
-  -webkit-transition-property: color, background;
   -webkit-transition-duration: 0.5s, 0.5s;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 100vh) {
   .sidenav {
     padding-top: 15px;
   }
   .sidenav a {
     font-size: 18px;
   }
+}
+
+@font-face {
+  font-family: AdventProThin;
+  src: url(assets/fonts/AdventPro-Thin.ttf) format("opentype");
+}
+@font-face {
+  font-family: AdventProBold;
+  src: url(assets/fonts/AdventPro-Bold.ttf) format("opentype");
+}
+@font-face {
+  font-family: Raleway-Italic;
+  src: url(assets/fonts/Raleway-Italic-VariableFont_wght.ttf) format("opentype");
+}
+@font-face {
+  font-family: Raleway;
+  src: url(assets/fonts/Raleway-VariableFont_wght.ttf) format("opentype");
 }

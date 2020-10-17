@@ -11,8 +11,16 @@ export class Constants {
         ['/resume', '#DAAD86'],
         ['/skills', '#BC986A'],
         ['/projects', '#501F3A'],
-        ['/home', '#FBEEC1']
+        ['/home', '#cccccc'],
+        ['/', '#cccccc']
     ]);
-
-
+    public static readonly NEXT_MAP = new Map([
+        ['/home', '/education'],
+        ['/contact', '/home'],
+        ['/education', '/projects'],
+        ['/resume', '/contact'],
+        ['/skills', '/resume'],
+        ['/projects', '/skills'],
+        ['/', '/contact']
+    ]);
 }

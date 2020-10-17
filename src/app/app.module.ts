@@ -9,6 +9,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
+import { TableModule } from 'primeng/table';
+import { TooltipModule } from 'primeng/tooltip';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { ResumeComponent } from './resume/resume.component';
   ],
   imports: [
     BrowserModule,
+    TableModule,
+    TooltipModule,
     AppRoutingModule
   ],
   providers: [],

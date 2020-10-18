@@ -3,6 +3,14 @@ body {
   height: 100vh;
   font-family: "AdventProBold" !important;
 }
+.ham {
+  color: #ccc;
+  mix-blend-mode: difference !important;
+  font-size: 30px;
+  padding-bottom: 3%;
+  cursor: pointer;
+  position: relative;
+}
 
 .sidenav {
   height: 100%;
@@ -45,7 +53,7 @@ body {
   transition: margin-left 0.5s;
   padding: 16px;
   height: 100vh;
-  -webkit-transition-duration: 0.5s, 0.5s;
+  transition-duration: 0.5s, 0.5s;
 }
 
 @media screen and (max-height: 100vh) {

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
-import { slideInAnimation } from './animations';
+import { slideInAnimation } from './shared/animations';
 import { Constants } from './shared/constants';
 
 @Component({

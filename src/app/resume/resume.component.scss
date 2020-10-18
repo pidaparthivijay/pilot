@@ -1,0 +1,11 @@
+.title {
+  font-size: 2em;
+}
+ul {
+  list-style-type: none;
+  li:before {
+    content: "\27A2";
+  }
+  margin: 0;
+  padding: 0;
+}

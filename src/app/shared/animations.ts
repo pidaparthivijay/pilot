@@ -1,4 +1,4 @@
-import { trigger, transition, style, query, animateChild, animate, group } from '@angular/animations';
+import { trigger, transition, style, query, animateChild, animate, group, state } from '@angular/animations';
 export const slideInAnimation =
     trigger('routeAnimations', [
         transition('* <=> *', [
@@ -10,11 +10,10 @@ export const slideInAnimation =
                     right: 0,
                     width: '100%'
                 })
-            ]),
+            ], { optional: true }),
             query(':enter', [
                 animate('500ms ease-out', style({ transform: 'translateY(-100%)' }))
-
-            ]),
+            ], { optional: true }),
             query(':leave', animateChild(), { optional: true }),
             group([
                 query(':leave', [
@@ -22,8 +21,20 @@ export const slideInAnimation =
                 ], { optional: true }),
                 query(':enter', [
                     animate('500ms ease-out', style({ top: '-100%', transform: 'translateY(0%)' }))
-                ])
+                ], { optional: true })
             ]),
-            query(':enter', animateChild()),
+            query(':enter', animateChild(), { optional: true }),
         ])
     ]);
+
+export const rowExpansionAnimations = trigger('rowExpansionTrigger', [
+    state('void', style({
+        transform: 'translateX(-10%)',
+        opacity: 0
+    })),
+    state('active', style({
+        transform: 'translateX(0)',
+        opacity: 1
+    })),
+    transition('* <=> *', animate('400ms cubic-bezier(0.86, 0, 0.07, 1)'))
+]);

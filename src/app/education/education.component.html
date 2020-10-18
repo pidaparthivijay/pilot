@@ -1,1 +1,43 @@
-<p>education works!</p>
+<p-table [value]="schools" dataKey="name">
+  <ng-template pTemplate="header">
+    <tr>
+      <th style="width: 3rem"></th>
+      <th>Level</th>
+      <th>Name</th>
+      <th>Score</th>
+      <th>Specialization</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-school let-expanded="expanded">
+    <tr>
+      <td>
+        <button
+          type="button"
+          pButton
+          pRipple
+          [pRowToggler]="school"
+          [icon]="expanded ? 'pi pi-chevron-down' : 'pi pi-chevron-right'"
+        ></button>
+      </td>
+      <td>{{ school.level }}</td>
+      <td>
+        <a href="{{ school.weburl }}"> {{ school.name }}</a>
+      </td>
+      <td>{{ school.score }}</td>
+      <td>{{ school.specialization }}</td>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="rowexpansion" let-school>
+    <tr>
+      <td colspan="4">
+        <div class="p-p-3">
+          <a target="_blank" href="{{ school.locationUrl }}">
+            {{ school.location }}</a
+          >
+          <br />
+          {{ school.description }}
+        </div>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>

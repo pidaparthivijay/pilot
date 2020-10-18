@@ -53,7 +53,8 @@ body {
 #main {
   transition: margin-left 0.5s;
   padding: 16px;
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
   transition-duration: 0.5s, 0.5s;
 }
 

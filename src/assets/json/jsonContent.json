@@ -1,0 +1,37 @@
+{
+  "schoolData": [
+    {
+      "level": "Graduation with Bachelor of Technology",
+      "name": "Jawaharlal Nehru Technological University - University College of Engineering",
+      "description": "Product Description",
+      "image": "jntukucev.jpg",
+      "score": 74.65,
+      "location": "Vizianagaram",
+      "locationUrl": "https://www.google.com/maps/place/18.151063,83.375687",
+      "weburl": "https://jntukucev.ac.in/",
+      "specialization": "Information Technology"
+    },
+    {
+      "level": "Higher Secondary Education (Intermediate)",
+      "name": "Narayana Junior College",
+      "description": "Product Description",
+      "image": "narayana.jpg",
+      "score": 93.1,
+      "location": "Danavipet Campus - Rajahmundry",
+      "locationUrl": "https://www.google.com/maps/place/17.008563,81.785562",
+      "weburl": "https://narayanagroup.com/",
+      "specialization": "Maths, Physics, Chemistry"
+    },
+    {
+      "level": "Secondary School (S.S.C)",
+      "name": "Minerva Public School",
+      "description": "Product Description",
+      "image": "jntukucev.jpg",
+      "score": 90.5,
+      "locationUrl": "https://www.google.com/maps/place/17.230313,82.208062",
+      "location": "Prathipadu - East Godavari Dist. - A.P",
+      "weburl": "http://www.minerva.edu.in/prathipadu/about-us/",
+      "specialization": "General"
+    }
+  ]
+}

@@ -10,10 +10,11 @@ export class Constants {
         ['/about', '#000000'],
         ['/education', '#659DBD'],
         ['/projects', '#907163'],
-        ['/skills', '#BC986A'],
+        ['/skills', '#EDEAE5'],
         ['/resume', '#DAAD86'],
         ['/contact', '#8D8741']]);
     public static readonly NEXT_MAP = new Map([
+        ['/', '/about'],
         ['/home', '/about'],
         ['/about', '/education'],
         ['/education', '/projects'],

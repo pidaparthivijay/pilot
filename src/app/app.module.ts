@@ -1,3 +1,4 @@
+import { DropdownModule } from 'primeng/dropdown';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -16,6 +17,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ResumeComponent } from './resume/resume.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import { SkillsComponent } from './skills/skills.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +35,8 @@ import { SkillsComponent } from './skills/skills.component';
     BrowserAnimationsModule,
     TableModule,
     ButtonModule,
+    DropdownModule,
+    FormsModule,
     HttpClientModule,
     ChartModule,
     TooltipModule,

@@ -13,7 +13,7 @@ import { Constants } from './shared/constants';
 })
 export class AppComponent {
 
-  title = 'pilot';
+  title = 'Vijay';
   nextComponent: string;
 
   constructor(private router: Router) {

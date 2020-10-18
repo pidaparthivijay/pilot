@@ -4,11 +4,16 @@
 </div>
 <div id="main">
   <span
-    style="font-size: 30px; cursor: pointer; position: absolute"
+    style="
+      font-size: 30px;
+      padding-bottom: 3%;
+      cursor: pointer;
+      position: relative;
+    "
     (click)="openNav()"
     >&#9776;</span
   >
-  <div style="padding-top: 3.5%" [@routeAnimations]="prepareRoute(outlet)">
+  <div [@routeAnimations]="prepareRoute(outlet)">
     <router-outlet #outlet="outlet"></router-outlet>
   </div>
   <i

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { EducationComponent } from './education/education.component';
 import { HomeComponent } from './home/home.component';
@@ -14,34 +15,39 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
+    path: 'about',
+    component: AboutComponent,
+    data: { animation: 'about' }
+  },
+  {
     path: 'home',
     component: HomeComponent,
-    data: { animation: 'First' }
+    data: { animation: 'home' }
   },
   {
     path: 'contact',
     component: ContactComponent,
-    data: { animation: 'Second' }
+    data: { animation: 'contact' }
   },
   {
     path: 'education',
     component: EducationComponent,
-    data: { animation: 'Third' }
+    data: { animation: 'education' }
   },
   {
     path: 'projects',
     component: ProjectsComponent,
-    data: { animation: 'Fourth' }
+    data: { animation: 'projects' }
   },
   {
     path: 'resume',
     component: ResumeComponent,
-    data: { animation: 'Fifth' }
+    data: { animation: 'resume' }
   },
   {
     path: 'skills',
     component: SkillsComponent,
-    data: { animation: 'Sixth' }
+    data: { animation: 'skills' }
   }
 ];
 

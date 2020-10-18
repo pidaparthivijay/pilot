@@ -1,10 +1,23 @@
-p:first-child:first-letter {
-  color: #903;
-  float: left;
-  font-family: Georgia;
-  font-size: 75px;
-  line-height: 60px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
+body {
+  margin: 0;
+  h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+}
+section {
+  padding: 3em;
+  height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+  blockquote {
+    font-size: 2em;
+    width: 30%;
+    margin-top: 17%;
+    position: absolute;
+  }
+}
+
+section:nth-child(even) {
+  background: #f1f1f1;
 }

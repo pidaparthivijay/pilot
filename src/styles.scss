@@ -73,3 +73,9 @@ body {
   font-family: Raleway;
   src: url(assets/fonts/Raleway-VariableFont_wght.ttf) format("opentype");
 }
+.routerContainer {
+  position: relative;
+}
+.routerContainer > * {
+  display: block;
+}

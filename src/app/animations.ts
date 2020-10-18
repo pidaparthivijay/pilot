@@ -12,15 +12,16 @@ export const slideInAnimation =
                 })
             ]),
             query(':enter', [
-                style({ right: '-100%' })
+                animate('500ms ease-out', style({ transform: 'translateY(-100%)' }))
+
             ]),
             query(':leave', animateChild(), { optional: true }),
             group([
                 query(':leave', [
-                    animate('500ms ease-out', style({ right: '100%' }))
+                    animate('500ms ease-out', style({ top: '-100%', transform: 'translateY(-100%)' }))
                 ], { optional: true }),
                 query(':enter', [
-                    animate('500ms ease-out', style({ right: '0%' }))
+                    animate('500ms ease-out', style({ top: '100%', transform: 'translateY(100%)' }))
                 ])
             ]),
             query(':enter', animateChild()),

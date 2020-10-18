@@ -12,6 +12,7 @@ import { ProjectsComponent } from "./projects/projects.component";
 import { ResumeComponent } from "./resume/resume.component";
 import { MenuComponent } from "./shared/menu/menu.component";
 import { SkillsComponent } from "./skills/skills.component";
+import { AboutComponent } from './about/about.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { SkillsComponent } from "./skills/skills.component";
     SkillsComponent,
     ProjectsComponent,
     ContactComponent,
-    ResumeComponent
+    ResumeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

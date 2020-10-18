@@ -15,12 +15,13 @@ export class Constants {
         ['/', '#cccccc']
     ]);
     public static readonly NEXT_MAP = new Map([
-        ['/home', '/education'],
+        ['/home', '/about'],
+        ['/about', '/education'],
         ['/contact', '/home'],
         ['/education', '/projects'],
         ['/resume', '/contact'],
         ['/skills', '/resume'],
         ['/projects', '/skills'],
-        ['/', '/contact']
+        ['/', '/about']
     ]);
 }

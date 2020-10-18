@@ -1,18 +1,45 @@
 <div class="center">
   <span>
-    <a routerLink="/home" pTooltip="Welcome!">Home</a>
-    <a routerLink="/about" pTooltip="Know about who I am">About</a>
-    <a routerLink="/education" pTooltip="What and where did I study"
+    <a
+      [class.activated]="currentUrl == '/home'"
+      routerLink="/home"
+      pTooltip="Welcome!"
+      >Home</a
+    >
+    <a
+      [class.activated]="currentUrl == '/about'"
+      routerLink="/about"
+      pTooltip="Know about who I am"
+      >About</a
+    >
+    <a
+      [class.activated]="currentUrl == '/education'"
+      routerLink="/education"
+      pTooltip="What and where did I study"
       >Education</a
     >
-    <a routerLink="/projects" pTooltip="What did I work on and am I working on"
+    <a
+      [class.activated]="currentUrl == '/projects'"
+      routerLink="/projects"
+      pTooltip="What did I work on and am I working on"
       >Projects</a
     >
-    <a routerLink="/skills" pTooltip="How can I do what I do">Skills</a>
-    <a routerLink="/resume" pTooltip="Everything about me in one place"
+    <a
+      [class.activated]="currentUrl == '/skills'"
+      routerLink="/skills"
+      pTooltip="How can I do what I do"
+      >Skills</a
+    >
+    <a
+      [class.activated]="currentUrl == '/resume'"
+      routerLink="/resume"
+      pTooltip="Everything about me in one place"
       >Resume</a
     >
-    <a routerLink="/contact" pTooltip="How can we get to know each other better"
+    <a
+      [class.activated]="currentUrl == '/contact'"
+      routerLink="/contact"
+      pTooltip="How can we get to know each other better"
       >Contact</a
     >
   </span>

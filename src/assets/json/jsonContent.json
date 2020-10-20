@@ -39,6 +39,7 @@
       "projectTitle": "Cherry Brown Services",
       "nature": "professional",
       "role": "Developer",
+      "dataSet": "cbData",
       "description": "The user should be able to register, login and browse through different services and book accordingly through which user gains the reward points basing on type of booking (tour/ room) which the user can utilize later.",
       "responsibilities": [
         "Designing UI.",
@@ -52,6 +53,7 @@
       "projectTitle": "Citi Connectivity Registry",
       "nature": "professional",
       "role": "Developer",
+      "dataSet": "ccrData",
       "description": "The user should be able to login, create and maintain connections that has been requested for access through the Citi Network. They also should be able to terminate a connection which is no longer in usage or required.",
       "responsibilities": [
         "Understanding Functional and Technical Requirement specification from end user's perspective.",
@@ -67,6 +69,7 @@
     {
       "projectTitle": "CCR Self Service",
       "nature": "professional",
+      "dataSet": "selfServiceData",
       "role": "UI design and creation of project, Micro service",
       "description": "To develop and maintain a SPW application for the book keeping and management of draft of connections for access requests to URLs in Citi Network for the Citi Group. The user should be able to login, create and maintain drafts that would be taken as input for application that maintains the connections. They also should be able to edit and terminate a connection which is no longer in usage or required.",
       "responsibilities": [
@@ -83,6 +86,7 @@
     {
       "projectTitle": "Graduation with Bachelor of Technology",
       "nature": "personal",
+      "dataSet": "hotelTourServicesData",
       "role": "Jawaharlal Nehru Technological University - University College of Engineering",
       "description": "Product Description",
       "responsibilities": "assets/images/jntu.jpg",
@@ -91,6 +95,7 @@
     {
       "projectTitle": "Graduation with Bachelor of Technology",
       "nature": "personal",
+      "dataSet": "portFolioData",
       "role": "Jawaharlal Nehru Technological University - University College of Engineering",
       "description": "Product Description",
       "responsibilities": "assets/images/jntu.jpg",

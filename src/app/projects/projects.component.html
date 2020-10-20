@@ -29,7 +29,15 @@
   </ng-template>
   <ng-template pTemplate="rowexpansion" let-project>
     <tr>
-      <td colspan="3"></td>
+      <td colspan="3">
+        <!-- <div *ngIf="project.dataSet==cbData">
+        <p-chart
+          type="polarArea"
+          pTooltip="Constituents of my skills in my projects"
+          [data]="project.dataSet"
+        ></p-chart>
+        </div> -->
+      </td>
       <td>
         {{ project.responsibilities }}
       </td>

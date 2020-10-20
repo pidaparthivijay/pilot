@@ -1,4 +1,4 @@
-<p-table [value]="projects" dataKey="projectTitle">
+<p-table rowExpandMode="single" [value]="projects" dataKey="projectTitle">
   <ng-template pTemplate="header">
     <tr>
       <th style="width: 3rem"></th>
@@ -14,6 +14,7 @@
       <td>
         <button
           type="button"
+          (click)="drawChart(project.dataSet)"
           pButton
           pRipple
           [pRowToggler]="project"
@@ -30,13 +31,11 @@
   <ng-template pTemplate="rowexpansion" let-project>
     <tr>
       <td colspan="3">
-        <!-- <div *ngIf="project.dataSet==cbData">
         <p-chart
           type="polarArea"
           pTooltip="Constituents of my skills in my projects"
-          [data]="project.dataSet"
+          [data]="data"
         ></p-chart>
-        </div> -->
       </td>
       <td>
         {{ project.responsibilities }}

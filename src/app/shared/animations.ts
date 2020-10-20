@@ -36,5 +36,5 @@ export const rowExpansionAnimations = trigger('rowExpansionTrigger', [
         transform: 'translateX(0)',
         opacity: 1
     })),
-    transition('* <=> *', animate('400ms cubic-bezier(0.86, 0, 0.07, 1)'))
+    transition('* <=> *', animate('500ms cubic-bezier(0.86, 0, 0.07, 1)'))
 ]);

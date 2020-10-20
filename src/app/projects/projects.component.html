@@ -1,9 +1,45 @@
-<p>
-  Proin sit amet felis est. Cras nec scelerisque velit. Donec urna nulla,
-  accumsan sed leo sit amet, tincidunt vulputate libero. Nunc vel nibh erat.
-  Donec efficitur vel turpis id vehicula. Pellentesque habitant morbi tristique
-  senectus et netus et malesuada fames ac turpis egestas. Donec viverra libero
-  id dui pretium rutrum. Fusce quis orci risus. Morbi luctus, dui a ultrices
-  scelerisque, tortor enim egestas libero, a ullamcorper dui est vestibulum
-  libero. Vivamus pretium mollis est eu eleifend.
-</p>
+<p-table [value]="projects" dataKey="projectTitle">
+  <ng-template pTemplate="header">
+    <tr>
+      <th style="width: 3rem"></th>
+      <th>Project Title</th>
+      <th>Nature</th>
+      <th>Roles Played</th>
+      <th>Technologies</th>
+      <th>Description</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-project let-expanded="expanded">
+    <tr>
+      <td>
+        <button
+          type="button"
+          pButton
+          pRipple
+          [pRowToggler]="project"
+          [icon]="expanded ? 'pi pi-chevron-down' : 'pi pi-chevron-right'"
+        ></button>
+      </td>
+      <td>{{ project.projectTitle }}</td>
+      <td>{{ project.nature }}</td>
+      <td>{{ project.role }}</td>
+      <td>{{ project.techStack }}</td>
+      <td>{{ project.description }}</td>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="rowexpansion" let-project>
+    <tr>
+      <td colspan="3"></td>
+      <td>
+        {{ project.responsibilities }}
+      </td>
+      <td colspan="2"></td>
+    </tr>
+  </ng-template>
+</p-table>
+<p-chart
+  type="radar"
+  [options]="radarOptions"
+  pTooltip="Constituents of my skills in my projects"
+  [data]="data"
+></p-chart>

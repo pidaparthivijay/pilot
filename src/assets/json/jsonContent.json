@@ -4,7 +4,7 @@
       "level": "Graduation with Bachelor of Technology",
       "name": "Jawaharlal Nehru Technological University - University College of Engineering",
       "description": "Product Description",
-      "image": "jntukucev.jpg",
+      "image": "assets/images/jntu.jpg",
       "score": 74.65,
       "location": "Vizianagaram",
       "locationUrl": "https://www.google.com/maps/place/18.151063,83.375687",
@@ -15,7 +15,7 @@
       "level": "Higher Secondary Education (Intermediate)",
       "name": "Narayana Junior College",
       "description": "Product Description",
-      "image": "narayana.jpg",
+      "image": "assets/images/narayana.jpg",
       "score": 93.1,
       "location": "Danavipet Campus - Rajahmundry",
       "locationUrl": "https://www.google.com/maps/place/17.008563,81.785562",
@@ -26,12 +26,75 @@
       "level": "Secondary School (S.S.C)",
       "name": "Minerva Public School",
       "description": "Product Description",
-      "image": "jntukucev.jpg",
+      "image": "assets/images/minerva.jpg",
       "score": 90.5,
       "locationUrl": "https://www.google.com/maps/place/17.230313,82.208062",
       "location": "Prathipadu - East Godavari Dist. - A.P",
       "weburl": "http://www.minerva.edu.in/prathipadu/about-us/",
       "specialization": "General"
+    }
+  ],
+  "projectData": [
+    {
+      "projectTitle": "Cherry Brown Services",
+      "nature": "professional",
+      "role": "Developer",
+      "description": "The user should be able to register, login and browse through different services and book accordingly through which user gains the reward points basing on type of booking (tour/ room) which the user can utilize later.",
+      "responsibilities": [
+        "Designing UI.",
+        "Creation and design of the database from scratch.",
+        "Implementation of one module out of 3.",
+        "Weekly connects with Business team to discuss the existing functionalities and requirements for new functionalities."
+      ],
+      "techStack": "JSPs, Servlets, JavaScript, jQuery, MVC Framework with Java and Oracle 11g"
+    },
+    {
+      "projectTitle": "Citi Connectivity Registry",
+      "nature": "professional",
+      "role": "Developer",
+      "description": "The user should be able to login, create and maintain connections that has been requested for access through the Citi Network. They also should be able to terminate a connection which is no longer in usage or required.",
+      "responsibilities": [
+        "Understanding Functional and Technical Requirement specification from end user's perspective.",
+        "Involvement in elaboration, implementation, testing, and defect fixing phases of some of the modules.",
+        "Conversion of the project to UX standards and maintaining them.",
+        "Fixing the service level issues in java.",
+        "Finding the root cause of the issues and fixing to avoid reoccurrence of similar issues in JSPs.",
+        "Creation of views and tables as per the requirement with optimum performance.",
+        "Following Agile Scrum methodology for stand-up meeting and updates to client."
+      ],
+      "techStack": "JSPs, JavaScript, jQuery, Spring MVC Framework with Java and Oracle 11g, Hibernate."
+    },
+    {
+      "projectTitle": "CCR Self Service",
+      "nature": "professional",
+      "role": "UI design and creation of project, Micro service",
+      "description": "To develop and maintain a SPW application for the book keeping and management of draft of connections for access requests to URLs in Citi Network for the Citi Group. The user should be able to login, create and maintain drafts that would be taken as input for application that maintains the connections. They also should be able to edit and terminate a connection which is no longer in usage or required.",
+      "responsibilities": [
+        "Worked on Agile methodology including team-based design and code reviews.",
+        "Design and development of the application using Angular (frontend), Spring Boot(Microservice).",
+        "Development of Single Page Application (SPA) using Angular Framework and injected generic services using Angular8.",
+        "Used Angular Routing for navigating between screens and developed several reusable directives and components.",
+        "Unit testing and integration testing done by JUnit",
+        "Following Agile Scrum methodology for stand-up meeting and updates to client."
+      ],
+
+      "techStack": "Java, Oracle 11g, Spring JPA, Spring Boot Microservices, Hibernate, Typescript and Angular"
+    },
+    {
+      "projectTitle": "Graduation with Bachelor of Technology",
+      "nature": "personal",
+      "role": "Jawaharlal Nehru Technological University - University College of Engineering",
+      "description": "Product Description",
+      "responsibilities": "assets/images/jntu.jpg",
+      "techStack": 74.65
+    },
+    {
+      "projectTitle": "Graduation with Bachelor of Technology",
+      "nature": "personal",
+      "role": "Jawaharlal Nehru Technological University - University College of Engineering",
+      "description": "Product Description",
+      "responsibilities": "assets/images/jntu.jpg",
+      "techStack": 74.65
     }
   ]
 }

@@ -21,7 +21,7 @@
       </td>
       <td>{{ school.level }}</td>
       <td>
-        <a href="{{ school.weburl }}"> {{ school.name }}</a>
+        <a target="_blank" href="{{ school.weburl }}"> {{ school.name }}</a>
       </td>
       <td>{{ school.score }}</td>
       <td>{{ school.specialization }}</td>
@@ -29,14 +29,20 @@
   </ng-template>
   <ng-template pTemplate="rowexpansion" let-school>
     <tr>
-      <td colspan="4">
-        <div class="p-p-3">
-          <a target="_blank" href="{{ school.locationUrl }}">
-            {{ school.location }}</a
-          >
-          <br />
-          {{ school.description }}
-        </div>
+      <td colspan="3">
+        <img
+          style="height: 25vh; width: 30vw"
+          src="{{ school.image }}"
+          alt="{{ school.name }}"
+        />
+      </td>
+      <td>
+        <a target="_blank" href="{{ school.locationUrl }}">
+          {{ school.location }}</a
+        >
+      </td>
+      <td>
+        {{ school.description }}
       </td>
     </tr>
   </ng-template>

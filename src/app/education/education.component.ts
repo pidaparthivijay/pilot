@@ -18,6 +18,6 @@ export class EducationComponent implements OnInit {
 
   }
   getSchoolData() {
-    this.sharedService.getProductsWithOrdersSmall().then(data => this.schools = data);
+    this.sharedService.getSchoolData().then(data => this.schools = data);
   }
 }

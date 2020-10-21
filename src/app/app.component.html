@@ -3,15 +3,28 @@
   <app-menu></app-menu>
 </div>
 <div id="main" style="background: #000000 !important">
-  <span class="ham" (click)="openNav()">&#9776;</span>
   <div
     id="page"
     class="routerContainer"
     [@routeAnimations]="prepareRoute(outlet)"
   >
+    <span class="ham" (click)="openNav()">&#9776;</span>
     <router-outlet #outlet="outlet"></router-outlet>
   </div>
+
+  <a
+    pTooltip="Download a copy of My Resume"
+    *ngIf="showResumeDownload"
+    tooltipPosition="top"
+    (click)="downloadResume()"
+    class="btn btn-info btn-xs"
+    download
+    style="position: fixed; bottom: 20px; right: 55px"
+    ><i class="pi pi-download"></i> &nbsp;Download</a
+  >
   <i
+    tooltipPosition="top"
+    pTooltip="Next Screen"
     (click)="navigateToNext()"
     class="pi pi-chevron-down"
     style="font-size: 30px; position: fixed; bottom: 20px; right: 20px"

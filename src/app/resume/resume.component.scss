@@ -1,11 +1,53 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+  border: thin;
+}
 .title {
   font-size: 2em;
+  color: #17a2b8;
+}
+.subtitle {
+  color: #000000;
+  font-size: 1em;
+  padding: 5px 0px 2px 0px !important;
+  font-weight: bolder;
 }
 ul {
   list-style-type: none;
+  list-style-position: inside;
   li:before {
     content: "\27A2";
   }
   margin: 0;
   padding: 0;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 100vh; /* Should be removed. Only for demonstration */
+}
+.projectTitle,
+.listHeading,
+.subheading {
+  font-weight: bold;
+  display: block;
+}
+
+.experience,
+.projects {
+  border-style: solid;
+  border: thick !important;
+  .project {
+    border-style: double !important;
+  }
+}
+
+.signature {
+  text-align: center;
+  padding-top: 2%;
 }

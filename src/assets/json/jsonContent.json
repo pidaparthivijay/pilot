@@ -84,22 +84,22 @@
       "techStack": "Java, Oracle 11g, Spring JPA, Spring Boot Microservices, Hibernate, Typescript and Angular"
     },
     {
-      "projectTitle": "Graduation with Bachelor of Technology",
+      "projectTitle": "Hotel & Tour Services",
       "nature": "personal",
       "dataSet": "hotelTourServicesData",
-      "role": "Jawaharlal Nehru Technological University - University College of Engineering",
+      "role": "Complete Individual Project Development from scratch",
       "description": "Product Description",
       "responsibilities": "assets/images/jntu.jpg",
-      "techStack": 74.65
+      "techStack": "Spring Boot, Spring JPA, Angular, Java, CSS"
     },
     {
-      "projectTitle": "Graduation with Bachelor of Technology",
+      "projectTitle": "Portfolio Site you are visiting now",
       "nature": "personal",
       "dataSet": "portFolioData",
-      "role": "Jawaharlal Nehru Technological University - University College of Engineering",
+      "role": "Complete Individual Project Development from scratch",
       "description": "Product Description",
       "responsibilities": "assets/images/jntu.jpg",
-      "techStack": 74.65
+      "techStack": "Angular, JavaScript, CSS"
     }
   ]
 }

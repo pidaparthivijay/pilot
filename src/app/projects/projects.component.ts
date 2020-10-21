@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { ContactComponent } from '../contact/contact.component';
 import { Constants } from '../shared/constants';
 import { SharedService } from '../shared/shared.service';
-
+import *  as Chart from 'chart.js';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-
+  canvas1: any;
+  ctx1: any;
   data;
   projects: any[] = [];
   constructor(private sharedService: SharedService) {
@@ -48,7 +48,13 @@ export class ProjectsComponent implements OnInit {
   };
   ngOnInit(): void {
     this.getProjectData();
-
+    this.canvas1 = document.getElementById('myChart1');
+    this.ctx1 = this.canvas1.getContext('2d');
+    let myChart1 = new Chart(this.ctx1, {
+      type: 'radar',
+      data: Constants.projectData,
+      options: this.radarOptions,
+    });
   }
   getProjectData() {
     this.sharedService.getProjectData().then(data => this.projects = data);
@@ -70,4 +76,5 @@ export class ProjectsComponent implements OnInit {
       this.data = Constants.portFolioData;
     }
   }
+
 }

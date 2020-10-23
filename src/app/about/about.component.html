@@ -1,19 +1,62 @@
 <div>
   <img style="height: 65vh" src="assets/images/vijay.jpg" alt="Vijay" />
-  <div class="float-right" style="width: 25%; color: #ffffff !important">
-    <p>
-      Who Am I? Pellentesque non ligula at odio pretium ultricies. Suspendisse
-      gravida, lectus et aliquam dictum, nisi nulla scelerisque elit, sed
-      accumsan magna tortor quis nunc. Suspendisse nec sem ut lectus malesuada
-      vulputate vel non dolor. Aliquam sed diam id turpis blandit gravida. Etiam
-      bibendum pulvinar turpis. Nulla bibendum, sem in venenatis tristique,
-      metus turpis maximus quam, at hendrerit nulla ipsum sit amet eros.
-      Pellentesque sodales convallis hendrerit. Curabitur sit amet nunc sagittis
-      lacus lobortis sodales eget sed arcu. Vestibulum viverra lacinia eleifend.
-      Aenean lacinia eget magna in dictum. Etiam et lacus sed erat pretium
-      tempor ac in tortor. Nam ac arcu a turpis vehicula scelerisque. Donec eget
-      feugiat mauris, ut lobortis lacus. Nunc tortor risus, mattis vitae
-      eleifend nec, sodales vitae ex. Cras at malesuada quam.
-    </p>
+  <div class="float-right" style="width: 55%; color: #ffffff !important">
+    <div class="row">
+      <div class="column">
+        <p class="question">Who Am I?</p>
+        <p class="answer">I am Vijay..</p>
+        <p class="question">Wait is that my full name?</p>
+        <p class="answer">Umm... No..</p>
+        <p class="question">So what is my full name?</p>
+        <p class="answer">are you sure you want to know?</p>
+        <p class="question">
+          Not Really... OR
+          <a href="javascript:void(0);" (click)="bringUpName()"
+            >Yes .. I want to know</a
+          >
+        </p>
+        <p
+          class="fullName"
+          id="fullName"
+          style="display: none"
+          [@visibilityChanged]="visiblityState"
+        >
+          Vijayaditya Venkata Subrahmanya Pidaparthi
+        </p>
+        <p class="question">What do I do?</p>
+        <p class="answer">I work as a Developer/Software Engineer</p>
+        <p class="question">What do I develop?</p>
+        <p class="answer">I develop Web applications (websites to be simple)</p>
+        <p class="question">Where do I live?</p>
+        <p class="answer">
+          Currently in Madras.. yeah.. people call it Chennai.. However, I like
+          calling it by classic name.. so Madras it is..
+        </p>
+        <p class="question">Where am I from?</p>
+        <p class="answer">
+          I am from a village called Dharmavaram Near Annavaram in Andhra
+          Pradesh.. Probably you may not know either of them..
+        </p>
+      </div>
+      <div class="column">
+        <p class="question">What do I do when I have nothing to do?</p>
+        <p class="answer">I read books..</p>
+        <p class="question">How many books did I read?</p>
+        <p class="answer">Atleast 50..</p>
+        <p class="question">What genre?</p>
+        <p class="answer">Novels, Mythology .. etc.,</p>
+        <p class="question">Wait.. Mythology, am I good at this?</p>
+        <p class="answer">Umm.. yes I do think so..</p>
+        <p class="question">What else am I good at?</p>
+        <p class="answer">Visit my Skills page(Hyperlink to skills)</p>
+        <p class="question">What have I worked on?</p>
+        <p class="answer">Visit my projects page (Hyperlink to projects)</p>
+        <p class="question">How can I be contacted?</p>
+        <p class="answer">Visit my Contact page (Hyperlink to Contact)</p>
+        <p class="question">
+          Thats it... these can be considered as FAQ about me :)
+        </p>
+      </div>
+    </div>
   </div>
 </div>

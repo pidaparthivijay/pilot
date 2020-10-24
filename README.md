@@ -13,3 +13,7 @@ https://pidaparthivijay.github.io/pilot
 # Icons and UI
 
 Used Primeng for most of the components
+
+# Graphs
+
+Used Primeng & Charts.js.

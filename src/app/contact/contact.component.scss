@@ -1,0 +1,26 @@
+.contactDetails {
+  i,
+  img {
+    font-size: 5em;
+  }
+  *:hover {
+    transform: scale(1.25);
+  }
+}
+th {
+  text-align: center;
+}
+td {
+  padding-right: 15px;
+}
+
+a {
+  color: darkgreen;
+}
+
+section {
+  height: 100vh;
+  position: inherit;
+  padding-top: 15%;
+  padding-left: 13.5% !important;
+}

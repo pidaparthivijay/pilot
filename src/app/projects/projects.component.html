@@ -10,7 +10,12 @@
     </tr>
   </ng-template>
   <ng-template pTemplate="body" let-project let-expanded="expanded">
-    <tr>
+    <tr
+      [ngClass]="{
+        professional: project.nature === 'Professional',
+        personal: project.nature === 'Personal'
+      }"
+    >
       <td>
         <button
           type="button"

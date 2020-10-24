@@ -3,7 +3,6 @@
     {
       "level": "Graduation with Bachelor of Technology",
       "name": "Jawaharlal Nehru Technological University - University College of Engineering",
-      "description": "Product Description",
       "image": "assets/images/jntu.jpg",
       "score": 74.65,
       "location": "Vizianagaram",
@@ -14,7 +13,6 @@
     {
       "level": "Higher Secondary Education (Intermediate)",
       "name": "Narayana Junior College",
-      "description": "Product Description",
       "image": "assets/images/narayana.jpg",
       "score": 93.1,
       "location": "Danavipet Campus - Rajahmundry",
@@ -25,7 +23,6 @@
     {
       "level": "Secondary School (S.S.C)",
       "name": "Minerva Public School",
-      "description": "Product Description",
       "image": "assets/images/minerva.jpg",
       "score": 90.5,
       "locationUrl": "https://www.google.com/maps/place/17.230313,82.208062",
@@ -37,7 +34,7 @@
   "projectData": [
     {
       "projectTitle": "Cherry Brown Services",
-      "nature": "professional",
+      "nature": "Professional",
       "role": "Developer",
       "dataSet": "cbData",
       "description": "The user should be able to register, login and browse through different services and book accordingly through which user gains the reward points basing on type of booking (tour/ room) which the user can utilize later.",
@@ -51,7 +48,7 @@
     },
     {
       "projectTitle": "Citi Connectivity Registry",
-      "nature": "professional",
+      "nature": "Professional",
       "role": "Developer",
       "dataSet": "ccrData",
       "description": "The user should be able to login, create and maintain connections that has been requested for access through the Citi Network. They also should be able to terminate a connection which is no longer in usage or required.",
@@ -68,7 +65,7 @@
     },
     {
       "projectTitle": "CCR Self Service",
-      "nature": "professional",
+      "nature": "Professional",
       "dataSet": "selfServiceData",
       "role": "UI design and creation of project, Micro service",
       "description": "To develop and maintain a SPW application for the book keeping and management of draft of connections for access requests to URLs in Citi Network for the Citi Group. The user should be able to login, create and maintain drafts that would be taken as input for application that maintains the connections. They also should be able to edit and terminate a connection which is no longer in usage or required.",
@@ -85,20 +82,33 @@
     },
     {
       "projectTitle": "Hotel & Tour Services",
-      "nature": "personal",
+      "nature": "Personal",
       "dataSet": "hotelTourServicesData",
       "role": "Complete Individual Project Development from scratch",
-      "description": "Product Description",
-      "responsibilities": "assets/images/jntu.jpg",
+      "description": "Contains 3 types of users. Admin, Employee and Customer. Admin can Create,Read,Update,Delete (CRUD) the rooms, Amenities and tours they offer. Empoyee would be generating and mailing bill and assigning vehicle and driver on tours. Customer can request, cancel the rooms and amenities and tours. They can also gain rewards basing on their rooms/tour requests. All types of users can reset their passwords by requesting a OTP via mail.",
+      "responsibilities": [
+        "Exploring Mail via java and PDF generation",
+        "Design and development of the application using Angular (frontend)",
+        "Design and development of the application using Spring boot (backend)",
+        "Design and implementation of the Database using postgresql & Spring JPA",
+        "Used Angular Routing for navigating between screens and primeng for UI.",
+        "Putting myself in the shoes of Client, End User, Delivery Manager and Developer"
+      ],
       "techStack": "Spring Boot, Spring JPA, Angular, Java, CSS"
     },
     {
       "projectTitle": "Portfolio Site you are visiting now",
-      "nature": "personal",
+      "nature": "Personal",
       "dataSet": "portFolioData",
       "role": "Complete Individual Project Development from scratch",
-      "description": "Product Description",
-      "responsibilities": "assets/images/jntu.jpg",
+      "description": "User will be able to know who I am and what I do. They will be able to checkout what my skillset is, what have I used and download my latest resume.They can have my contact information on the contact screen.",
+      "responsibilities": [
+        "Exploring UI & UX Designs for portfolio sites",
+        "Design and development of the application using Angular (frontend)",
+        "Used json to show the entire data which need not be coded",
+        "Used Angular Routing for navigating between screens and animations.",
+        "Putting myself in the shoes of Client, End User, Delivery Manager and Developer"
+      ],
       "techStack": "Angular, JavaScript, CSS"
     }
   ]

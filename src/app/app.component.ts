@@ -22,7 +22,6 @@ export class AppComponent {
         ).style.background = Constants.COLOR_MAP.get(val.url);
         this.nextComponent = Constants.NEXT_MAP.get(val.url);
         this.showResumeDownload = "/resume" == val.url;
-        console.log(this.showResumeDownload);
       }
     });
   }

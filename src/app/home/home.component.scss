@@ -11,10 +11,14 @@ section {
   height: 100vh;
   position: relative;
   box-sizing: border-box;
-  blockquote {
+  p {
+    width: 90%;
+    padding-left: 15%;
     font-size: 6em;
-    margin-top: 15%;
     position: relative;
+  }
+  p:first-of-type {
+    margin-top: 15%;
   }
 }
 
